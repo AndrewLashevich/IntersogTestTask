@@ -58,6 +58,9 @@ function countZerosAndOnes(arrayFromResponse){
 		    i=i+2;
 		}
 	}
-    console.log("Количество нулей: "+zeros + "\nКоличество единиц: " + ones + "\nПроцентное соотношение: " + "% нулей = " + percentRatioForZeros + " | % единиц = "+percentRatioForOnes);
-    console.log("\nКоличество пар одинаковых цифр: "+doubles+"\nКоличество троек одинаковых цифр: "+triples);
+
+    let percentRatioForDoubles = ((doubles/arrayFromResponse.length)*100).toFixed(2);
+    let percentRatioForTriples = ((triples/arrayFromResponse.length)*100).toFixed(2);
+    console.log("Количество нулей: "+zeros + "\nКоличество единиц: " + ones + "\nПроцентное соотношение: % нулей = " + percentRatioForZeros + " | % единиц = "+percentRatioForOnes);
+    console.log("\nКоличество пар одинаковых цифр: "+doubles+"\nКоличество троек одинаковых цифр: "+triples+"\nПроцентное соотношение: % пар: "+percentRatioForDoubles+" | % троек: "+percentRatioForTriples);
 }
